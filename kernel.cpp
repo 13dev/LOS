@@ -12,15 +12,17 @@ extern "C" void CallConstructors()
 }
 
 
-void printf(const char* str)
+void printf(char* str)
 {
     //Specific video memory to write text on screen
-    unsigned short* VideoMemory = (unsigned short*) 0xb8000;
+    static unsigned short* VideoMemory = (unsigned short*)0xb8000;
 
-    for (int i = 0; str[i] != '\n'; ++i) {
+    for(int i = 0; str[i] != '\0'; ++i)
+    {
         // Copy the high bytes of VideMemory and combine with str byte
         VideoMemory[i] = (VideoMemory[i] & 0xFF00) | str[i];
     }
+
 }
 //Entry Point for the kernel
 extern "C" void KernelEntryPoint(void* multiboot_struct, unsigned int magic_number)

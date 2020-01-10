@@ -4,31 +4,29 @@ OUTPUT_ARCH(i386:i386)
 
 SECTIONS
 {
-    . = 0x010000;
-    .text :
-    {
-        *(.multiboot)
-        *(.text*)
-        *(.rodata)
-    }
+  . = 0x0100000;
 
-    .data :
-    {
-        start_ctors = .;
-        KEEP(*( .init_array ));
-        KEEP(*(SORT_BY_INIT_PRIORITY( .init_array.* )));
-        end_ctors = .;
+  .text :
+  {
+    *(.multiboot)
+    *(.text*)
+    *(.rodata)
+  }
 
-        *(.data)
-    }
-    .bss :
-    {
-        *.(.bss)
-    }
+  .data  :
+  {
+    start_ctors = .;
+    KEEP(*( .init_array ));
+    KEEP(*(SORT_BY_INIT_PRIORITY( .init_array.* )));
+    end_ctors = .;
 
-    /DISCARD/ :
-    {
-        *(.fini_array*)
-        *(.comment)
-    }
+    *(.data)
+  }
+
+  .bss  :
+  {
+    *(.bss)
+  }
+
+  /DISCARD/ : { *(.fini_array*) *(.comment) }
 }
