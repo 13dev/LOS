@@ -9,11 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0972254-ee40-4037-aaff-5b6e043af9e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+    <list default="true" id="a0972254-ee40-4037-aaff-5b6e043af9e7" name="Default" comment="fix printf end char&#10;format linker.ld&#10;add make kernel.iso">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kernel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kernel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linker.ld" beforeDir="false" afterPath="$PROJECT_DIR$/linker.ld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loader.s" beforeDir="false" afterPath="$PROJECT_DIR$/loader.s" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kernel.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="kernel.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kernel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="types.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/types.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -38,16 +45,16 @@
         <entry file="file://$PROJECT_DIR$/loader.s">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="53" />
+            <state relative-caret-position="326">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -56,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -64,8 +71,8 @@
       <file leaf-file-name="linker.ld" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linker.ld">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="566">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -83,10 +90,11 @@
         <option value="$PROJECT_DIR$/src/kernel.asm" />
         <option value="$PROJECT_DIR$/src/kernel.c" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/kernel.cpp" />
         <option value="$PROJECT_DIR$/loader.s" />
-        <option value="$PROJECT_DIR$/linker.ld" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/linker.ld" />
+        <option value="$PROJECT_DIR$/types.h" />
+        <option value="$PROJECT_DIR$/kernel.cpp" />
       </list>
     </option>
   </component>
@@ -100,10 +108,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="227" />
-    <option name="y" value="127" />
-    <option name="width" value="1409" />
-    <option name="height" value="1040" />
+    <option name="x" value="196" />
+    <option name="width" value="1124" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -118,6 +125,11 @@
             <path>
               <item name="LOS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LOS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LOS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LOS" type="462c0819:PsiDirectoryNode" />
+              <item name=".vagrant" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -162,22 +174,39 @@
       <workItem from="1578523528489" duration="701000" />
       <workItem from="1578527206036" duration="19000" />
       <workItem from="1578527242253" duration="5184000" />
+      <workItem from="1578609270405" duration="5041000" />
     </task>
+    <task id="LOCAL-00001" summary="add primitive contructors pointers and CallConstructors&#10;Create kernel entry point&#10;Make loader.s, set magic number for bootloader&#10;make the linker">
+      <created>1578609378873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578609378873</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix printf end char&#10;format linker.ld&#10;add make kernel.iso">
+      <created>1578617164574</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578617164574</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10720000" />
+    <option name="totallyTimeSpent" value="15761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="510" y="66" width="1126" height="832" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3111511" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22526042" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="GCoverage" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="make" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -197,7 +226,47 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add primitive contructors pointers and CallConstructors&#10;Create kernel entry point&#10;Make loader.s, set magic number for bootloader&#10;make the linker" />
+    <MESSAGE value="fix printf end char&#10;format linker.ld&#10;add make kernel.iso" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix printf end char&#10;format linker.ld&#10;add make kernel.iso" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/kernel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loader.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linker.ld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kernel.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -237,38 +306,48 @@
     <entry file="file://$PROJECT_DIR$/grub/grub.cfg" />
     <entry file="file://$PROJECT_DIR$/src/kernel.asm" />
     <entry file="file://$PROJECT_DIR$/src/kernel.c" />
+    <entry file="file://$PROJECT_DIR$/iso/boot/grub/grub.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kernel.cpp">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="326">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loader.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/linker.ld">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="566">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
+    <entry file="file://$PROJECT_DIR$/types.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="53" />
+        <state relative-caret-position="40">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 //
 // Created by Leonardo Oliveira on 08/01/2020.
 //
+#include "types.h"
 
 typedef void (*constructor)();
 extern "C" constructor start_ctors;
@@ -15,7 +16,7 @@ extern "C" void CallConstructors()
 void printf(char* str)
 {
     //Specific video memory to write text on screen
-    static unsigned short* VideoMemory = (unsigned short*)0xb8000;
+    static uint16_t* VideoMemory = (uint16_t*)0xb8000;
 
     for(int i = 0; str[i] != '\0'; ++i)
     {
@@ -25,10 +26,11 @@ void printf(char* str)
 
 }
 //Entry Point for the kernel
-extern "C" void KernelEntryPoint(void* multiboot_struct, unsigned int magic_number)
+extern "C" void KernelEntryPoint(void* multiboot_struct, uint32_t magic_number)
 {
     printf("Kernel Entry Point");
 
+    // do not close it
     while(true);
 }
 
